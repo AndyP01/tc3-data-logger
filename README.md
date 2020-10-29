@@ -18,12 +18,13 @@ in perpetuity.
 Demo of high speed logging to CSV.  
 
 ### Performance overview
-IPC | Performance Class | AddBool | AddBoolLiteral | AddInt | AddIntLiteral | AddString "test" | AddStringLiteral "test" | Max buffer size (Write 10000 records of 8 x int, task @ 1ms)
+IPC | Performance Class | AddBool | AddBoolLiteral | AddInt | AddIntLiteral | AddString "test" | AddStringLiteral "test" | Max buffer size *1
 -|-|-|-|-|-|-|-|-
 Laptop | 93 | 0.8us | 0.4us | 0.3us | 0.3us | 0.6us | 0.3us | 
 CX5140 | 50 | 2.0us | 1.1us | 1.1us | 0.9us | 1.3us | 1.0us | 6453 Bytes
 C6015 2 Core| 40 | 2.2us | 1.1us | 1.3us | 1.0us | 1.4us | 1.3us | 3100 Bytes
 CX8190 | 20 | tba | tba | tba | tba | tba | tba | 4650 Bytes
+*1) Write 10000 records of 8 x int, task @ 1ms
 
 ## Install 
 Not required.  Simply open the project.
