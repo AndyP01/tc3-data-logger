@@ -35,5 +35,5 @@ This project uses TcXaeShell 3.1.4024.10
 This is not a guide for TcXaeShell, please visit http://beckhoff.com/ for further guides
 * Open the included TwinCAT project and activate on your local machine
 * Login and set the PLC running
-* Open the HMI in live view
+* Manually set the loggingState to INITIALISE
 
