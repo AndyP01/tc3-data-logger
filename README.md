@@ -17,6 +17,8 @@ in perpetuity.
 ## Overview 
 Demo of high speed logging to CSV.  
 
+This code uses the fluent interface design pattern.  For more information see https://www.plccoder.com/fluent-code/
+
 ### Performance overview
 IPC | Performance Class | AddBool | AddBoolLiteral | AddInt | AddIntLiteral | AddString "test" | AddStringLiteral "test" | Max buffer size *1
 -|-|-|-|-|-|-|-|-
