@@ -12,9 +12,10 @@ VAR
 	_size : UDINT;
 END_VAR
 VAR CONSTANT
-	SIZE_OF_INT : UDINT := SIZEOF(INT);
-	SIZE_OF_CHAR : UDINT := SIZEOF(BYTE);
-	SIZE_OF_BOOL : UDINT := SIZEOF(BOOL);	
+	SIZE_OF_INT		: UDINT := SIZEOF(INT);
+	SIZE_OF_ULINT	: UDINT := SIZEOF(ULINT);
+	SIZE_OF_CHAR	: UDINT := SIZEOF(BYTE);
+	SIZE_OF_BOOL	: UDINT := SIZEOF(BOOL);	
 END_VAR]]></Declaration>
     <Implementation>
       <ST><![CDATA[]]></ST>
@@ -92,6 +93,20 @@ IF Remaining >= sizeInBytes THEN
 	
 	memcpy(GetNextAvailableAddress(),ADR(stringToWrite),sizeInBytes);
 	UpdateUsedBufferSize(sizeInBytes);
+
+END_IF]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="AddULintToBuffer" Id="{bf889ffa-2947-421c-8776-91fc782d14d4}">
+      <Declaration><![CDATA[METHOD PUBLIC AddULintToBuffer : BOOL
+VAR_IN_OUT
+	Field : ULINT;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF Remaining >= SIZE_OF_ULINT THEN
+	
+	memcpy(GetNextAvailableAddress(),ADR(Field),SIZE_OF_ULINT);
+	UpdateUsedBufferSize(SIZE_OF_ULINT);
 
 END_IF]]></ST>
       </Implementation>
@@ -187,6 +202,10 @@ END_VAR]]></Declaration>
       <LineId Id="38" Count="0" />
       <LineId Id="41" Count="4" />
       <LineId Id="39" Count="0" />
+    </LineIds>
+    <LineIds Name="ByteBuffer.AddULintToBuffer">
+      <LineId Id="52" Count="4" />
+      <LineId Id="34" Count="0" />
     </LineIds>
     <LineIds Name="ByteBuffer.FB_init">
       <LineId Id="7" Count="0" />

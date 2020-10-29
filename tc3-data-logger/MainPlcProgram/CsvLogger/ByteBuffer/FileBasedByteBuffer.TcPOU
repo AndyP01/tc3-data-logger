@@ -111,6 +111,16 @@ END_VAR]]></Declaration>
         <ST><![CDATA[AddStringToBuffer := activeBuffer.AddStringToBuffer(stringToWrite);]]></ST>
       </Implementation>
     </Method>
+    <Method Name="AddULintToBuffer" Id="{c7e860a8-9436-4671-81a4-e24553a29e77}">
+      <Declaration><![CDATA[METHOD AddULintToBuffer : BOOL
+VAR_IN_OUT
+	Field	: ULINT;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[AddULintToBuffer := activeBuffer.AddULintToBuffer(Field);]]></ST>
+      </Implementation>
+    </Method>
     <Property Name="IsActive" Id="{e3523571-9469-4ad4-93c1-782fe8ab88ef}">
       <Declaration><![CDATA[PROPERTY PUBLIC IsActive : BOOL]]></Declaration>
       <Get Name="Get" Id="{db4f71f0-98ea-4e81-a7fe-50180cc1d8c6}">
@@ -228,6 +238,9 @@ END_IF]]></ST>
     </LineIds>
     <LineIds Name="FileBasedByteBuffer.AddStringToBuffer">
       <LineId Id="10" Count="0" />
+    </LineIds>
+    <LineIds Name="FileBasedByteBuffer.AddULintToBuffer">
+      <LineId Id="7" Count="0" />
     </LineIds>
     <LineIds Name="FileBasedByteBuffer.IsActive.Get">
       <LineId Id="2" Count="0" />

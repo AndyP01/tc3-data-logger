@@ -33,6 +33,12 @@ VAR_IN_OUT
 	stringToWrite : STRING;
 END_VAR]]></Declaration>
     </Method>
+    <Method Name="AddULintToBuffer" Id="{60ba2e4e-67a4-413e-90d0-828400df7032}">
+      <Declaration><![CDATA[METHOD PUBLIC AddULintToBuffer : BOOL
+VAR_IN_OUT
+	Field : ULINT;
+END_VAR]]></Declaration>
+    </Method>
     <Property Name="Remaining" Id="{51976bac-1c73-455d-9d13-5f6a145cfdbd}">
       <Declaration><![CDATA[PROPERTY PUBLIC Remaining : UDINT]]></Declaration>
       <Get Name="Get" Id="{d833f280-7cad-4fb1-8799-1d0dbf6336fc}">
