@@ -39,6 +39,18 @@ VAR_INPUT
 	stringToWrite : STRING;
 END_VAR]]></Declaration>
     </Method>
+    <Method Name="AddULint" Id="{4076b3ca-c138-4b72-94a0-1e838a7282c1}">
+      <Declaration><![CDATA[METHOD PUBLIC AddULint : I_CsvRecord;
+VAR_IN_OUT
+	Field : ULINT;
+END_VAR]]></Declaration>
+    </Method>
+    <Method Name="AddULintLiteral" Id="{cf866177-6ef8-484d-aae8-47cf81158d1e}">
+      <Declaration><![CDATA[METHOD PUBLIC AddULintLiteral : I_CsvRecord;
+VAR_INPUT
+	Field : ULINT;
+END_VAR]]></Declaration>
+    </Method>
     <Method Name="EndRecord" Id="{c268a2ec-6e00-4508-83fe-0670c137b09a}">
       <Declaration><![CDATA[METHOD PUBLIC EndRecord : I_CsvDocument;
 ]]></Declaration>

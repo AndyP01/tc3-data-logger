@@ -113,6 +113,32 @@ AfterAddFieldOperations();
 AddStringLiteral := THIS^;]]></ST>
       </Implementation>
     </Method>
+    <Method Name="AddULint" Id="{02982d7e-e453-4377-8f35-adafb7ab4fc0}">
+      <Declaration><![CDATA[METHOD AddULint : I_CsvRecord
+VAR_IN_OUT
+	Field	: ULINT;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[BeforeAddFieldOperations();
+byteBuffer.AddULintToBuffer(Field);
+AfterAddFieldOperations();
+AddULint := THIS^;]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="AddULintLiteral" Id="{83fb0f0e-9941-4b25-907f-0796bb596871}">
+      <Declaration><![CDATA[METHOD AddULintLiteral : I_CsvRecord
+VAR_INPUT
+	Field	: ULINT;
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[BeforeAddFieldOperations();
+byteBuffer.AddULintToBuffer(Field);
+AfterAddFieldOperations();
+AddULintLiteral := THIS^;]]></ST>
+      </Implementation>
+    </Method>
     <Method Name="AfterAddFieldOperations" Id="{3fcf919f-9762-42a6-a5ab-708f62b01355}" FolderPath="Private\">
       <Declaration><![CDATA[METHOD PROTECTED AfterAddFieldOperations
 ]]></Declaration>
@@ -311,6 +337,14 @@ END_VAR
       <LineId Id="26" Count="0" />
       <LineId Id="35" Count="0" />
       <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="CsvByteDocumentWriter.AddULint">
+      <LineId Id="8" Count="2" />
+      <LineId Id="7" Count="0" />
+    </LineIds>
+    <LineIds Name="CsvByteDocumentWriter.AddULintLiteral">
+      <LineId Id="8" Count="2" />
+      <LineId Id="7" Count="0" />
     </LineIds>
     <LineIds Name="CsvByteDocumentWriter.AfterAddFieldOperations">
       <LineId Id="19" Count="1" />
