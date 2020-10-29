@@ -15,7 +15,7 @@ always subject to change, revision, and rethinking at any time. Please do not ho
 in perpetuity.
 
 ## Overview 
-Demo of high speed logging to CSV.  
+Demo of high speed logging to CSV.  "High speed" simply denotes that I have optimized this as far as possible using TwinCAT Realtime Monitor.  There will still be improvements to be made and I am happy to receive pull requests if you wish to contribute. 
 
 This code uses the fluent interface design pattern.  For more information see https://www.plccoder.com/fluent-code/
 
