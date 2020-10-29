@@ -76,10 +76,6 @@
       <DefaultResolution>Tc3_Module, * (Beckhoff Automation GmbH)</DefaultResolution>
       <Namespace>Tc3_Module</Namespace>
     </PlaceholderReference>
-    <PlaceholderReference Include="Tc3_RealtimeMonitoring">
-      <DefaultResolution>Tc3_RealtimeMonitoring, * (Beckhoff Automation GmbH)</DefaultResolution>
-      <Namespace>Tc3_RealtimeMonitoring</Namespace>
-    </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="MainPlcProgram.tmc">
